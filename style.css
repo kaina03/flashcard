@@ -1,0 +1,10 @@
+body{
+    background-color: blueviolet;
+}
+footer{
+    background-color: deeppink;
+    color: yellow;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
