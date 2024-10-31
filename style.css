@@ -1,6 +1,11 @@
 body{
-    background-color: blueviolet;
+    background:url(img/bg-desktop.jpg);
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color:#00F4BF;
 }
 footer{
     background-color: deeppink;
@@ -19,22 +24,30 @@ footer p {
 }
 .cartao{
     margin: 1rem 1rem;
-    background-color: rgb(0, 0, 0);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33%-6rem);
 }
 .cartao_conteudo{
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--card-front-color);
     height: 100%;
 }
 .cartao_conteudo h3{
-    background-color: deeppink;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6;
     font-size: 1VW;
+}
+.cartao_conteudo_pergunta p{
+    color: var(--text-color);
+    font-weight: 500;
+}
+.cartao_conteudo_resposta p{
+    color: var(--card-back-color);
+    font-weight: 700;
 }
